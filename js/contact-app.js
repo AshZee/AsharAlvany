@@ -96,7 +96,7 @@ form.addEventListener("submit", (e) =>{
             message.value = "";
         }
         else{
-            alert("OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!");
+            alert("This feature is currently unavailable as I transition domains, please reach out to me at alvany.ashar@gmail.com as I resolve this issue. Thank you!");
         }
     }
     xhr.send(JSON.stringify(formData));
