@@ -2,6 +2,7 @@ const scrollable = document.querySelector(".scrollable");
 const personalProjects = document.querySelector(".personalProjects");
 const header = document.querySelector("header");
 const websiteLogoP = document.querySelector(".websiteLogo p");
+const websiteLogoDiv = document.querySelector(".websiteLogo");
 const Ashar = document.querySelector(".Ashar");
 const Alvany = document.querySelector(".Alvany");
 const fountainPen = document.querySelector(".websiteLogo svg");
@@ -52,8 +53,12 @@ function logoAnimation(){
     setTimeout(() =>{
         rect = Ashar.getBoundingClientRect();
         rect1 = Alvany.getBoundingClientRect();
-        fountainPen.style.left = ((Math.abs(rect1.left - rect.right)/2) + rect.right) + "px";
-        test.style.left = ((Math.abs(rect1.left - rect.right)/2) + rect.right) + "px";
+        divRect = websiteLogoDiv.getBoundingClientRect();
+        let offset = (rect.right - rect1.left)/ 2;
+        fountainPen.style.left = (rect.right - divRect.left + offset + 5) + "px";
+        fountainPen.style.transform = "rotate(30deg)";
+        fountainPen.style.transform += "translate(-30%, -40%)";
+        test.style.left = ((Math.abs(rect1.left - rect.right)/2)) + "px";
         fountainPen.style.opacity = "1";
     }, 500 * buff3); //500
 }   
