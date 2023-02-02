@@ -231,9 +231,17 @@ setInterval(function(){
     }
     image.style.opacity = "0";
     console.log(randPic);
-    setTimeout(function(){
-    image.src = "images/portraits/"+pictures[randPic]+".jpg";
-    image.style.opacity = "1";
-    }, 500);
+    (function(){
+        return new Promise(resolve =>{
+            setTimeout(() =>{
+                image.src = "images/portraits/"+pictures[randPic]+".jpg";
+                resolve(image.src)
+            }, 500)
+        });
+    })().then((result) => {
+        setTimeout(() =>{
+            image.style.opacity = "1";
+        }, 250)
+    })
     console.log("Quote Switch");
 }, 10000);
