@@ -33,6 +33,10 @@ const options = {
     root: null,
     threshold: 0.2
 }
+const options2 = {
+    root: null,
+    threshold: 0.8
+}
 function logoAnimation(){
     for(let i = 0; i < logoP.length; i++){
         if (i < 5){
@@ -62,7 +66,20 @@ function logoAnimation(){
         fountainPen.style.opacity = "1";
     }, 500 * buff3); //500
 }   
-
+const observer2 = new IntersectionObserver((entries, observer2) =>{
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            console.log(entry.target.className);
+            console.log("intersection");
+            eval(`document.querySelector(".${entry.target.className}").style.opacity = "1"`);
+            // entry.style.opacity = "0";
+        }
+        else{
+            console.log(entry.target.className);
+            console.log("no intersection");
+        }
+    });
+}, options2);
 const observer = new IntersectionObserver((entries, observer) =>{
     entries.forEach(entry => {
         // entry.isIntersecting ? personalProjects.style.opacity = "0" : personalProjects.style.opacity = "1";
@@ -89,6 +106,10 @@ const observer = new IntersectionObserver((entries, observer) =>{
     });
 }, options);
 observer.observe(scrollable)
+// observer2.observe(section1)
+sections.forEach(element =>{
+    observer2.observe(element);
+})
 // window.addEventListener("scroll", () =>{
     //     let currentPos = window.pageYOffset;
     //     if(lastPos < currentPos && scrollFlag == false){

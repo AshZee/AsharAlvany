@@ -120,7 +120,7 @@ nav .projects{
 .personalProjects::before{
     background: rgb(19,19,19);
     /* border: 3px red solid; */
-    animation: 3s steps(17) 1.0s 1 normal forwards running typing;
+    animation: 3s steps(18) 1.0s 1 normal forwards running typing;
     /* @keyframes duration | easing-function | delay |
 iteration-count | direction | fill-mode | play-state | name */
 }
@@ -129,7 +129,7 @@ iteration-count | direction | fill-mode | play-state | name */
     width: 0.2rem;
     background-color: white;
     animation: 
-    3s steps(17) 1.0s 1 normal forwards running typing,
+    3s steps(18) 1.0s 1 normal forwards running typing,
     0.25s ease 0s 4 alternate forwards running blink,
     0.25s ease 4.5s infinite alternate forwards running blink;;
 }
@@ -157,7 +157,7 @@ iteration-count | direction | fill-mode | play-state | name */
     background: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0.9) 20%, rgba(0,0,0,0) 70%)
 }
 section{
-    opacity: 1;
+    opacity: 0;
     transition: all 1.5s ease;
     /* transform: translateX(-500px); */
     /* border: 3px brown solid; */
@@ -190,10 +190,11 @@ section{
     position: relative;
     height: 200px;
     width:  100%;
-    border: 3px red solid;
-    background-image: radial-gradient(rgb(150,150,150) 1px, rgb(38,38,38) 1px);
+    /* border: 3px red solid; */
+    background-image: radial-gradient(rgba(150,150,150,0.5) 1px, rgba(38,38,38,0.5) 1px);
     background-size: 20px 20px;
     mix-blend-mode: exclusion;
+    border-radius: 10px;
 }
 .websiteLogo p{
     /* border: 3px yellow solid; */
@@ -226,6 +227,70 @@ section{
     /* transform: translate(-50%, -45%); */
     /* border: 3px pink solid; */
     transition: opacity 500ms ease;
+}
+.tsLogo{
+    /* position: relative; */
+    /* mix-blend-mode: exclusion; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tsLogo img{
+    height: 80%;
+    /* border: red 3px solid;
+     */
+    /* flex: 1 1 auto; */
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+    /* position: absolute; */
+}
+.aoLogo{
+    /* position: relative; */
+    /* mix-blend-mode: exclusion; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 300px;
+    /* padding-left: 75px;
+    padding-right: 75px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.aoLogo img{
+    height: 100%;
+    /* border: red 3px solid;
+     */
+    /* flex: 1 1 auto; */
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+    /* position: absolute; */
+}
+.gmLogo{
+    /* position: relative; */
+    /* mix-blend-mode: exclusion; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.0);
+    width: fit-content;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.gmLogo img{
+    height: 80%;
+    /* border: red 3px solid;
+     */
+    /* flex: 1 1 auto; */
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+    /* position: absolute; */
 }
 /* .testCircle{
     position: absolute;
