@@ -50,8 +50,8 @@ const quotes = [
     "<i>\“Anything worth doing always starts as a bad idea.\”</i><BR/><b>-Leigh Bardugo<b>",
     "<i>\“Scientists dream of doing great things; engineers do them.\”</i><BR/><b>-James A. Michener</b>",
     "<i>\“Have I gone mad? I'm afraid so. You're entirely Bonkers. But I will tell you a secret, All the best people are.\”</i><BR/><b>-Alice in Wonderland</b>",
-    "<i>\You can’t help people if you don’t know them, if you don’t know their values.</i>\”<BR/><b>-Lesley Omenge</b>",
-    "<i>\“Nerds-we're the best lamest type of people you will ever meet.\”</i><BR/> <b>-Annette Velasco </b>",
+    "<i>\”A witty saying proves nothing\”</i><BR/><b>-Voltaire</b>",
+    "<i>\”Don't become a philosopher before you become rich\”</i><BR/> <b>-Shah Rukh Khan </b>",
     "<i>\“Me am robot man. Me do robot things. Me fix problem.\”</i><BR/><b>-Michael Reeves</b>",
     "<i>\“To believe blindly is to degenerate the human soul.\”</i><BR/><b>-Swami Vivekananda"
 ];
@@ -60,7 +60,9 @@ const pictures = [
     "Portrait2",
     "Portrait3",
     "Portrait4",
-    "Portrait5"
+    "Portrait5",
+    "Portrait6",
+    "Portrait7",
 ]
 console.log(quotes.length);
 

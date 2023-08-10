@@ -194,6 +194,7 @@ section{
     background-image: radial-gradient(rgba(150,150,150,0.5) 1px, rgba(38,38,38,0.5) 1px);
     background-size: 20px 20px;
     mix-blend-mode: exclusion;
+    margin: 10px 0;
     border-radius: 10px;
 }
 .websiteLogo p{
@@ -263,6 +264,7 @@ section{
     padding-right: 75px; */
     display: flex;
     align-items: center;
+    margin: 10px 0;
     justify-content: center;
 
 }
@@ -287,6 +289,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 0;
 
 }
 .gmLogo img{
